@@ -1,8 +1,8 @@
-graph workspace "TravelApp.TravelDB::Flights"
- edge table "TravelApp.TravelDB::Tables.Routes"
+graph workspace "Fun_Games_With_Tomer.TEST1::Flights"
+ edge table "Fun_Games_With_Tomer.TEST1::Tables.Routes"
   source column "airportCodeOrigin"
   target column "airportCodeDestination"
   key column "routeId"
- vertex table "TravelApp.TravelDB::Tables.Airports"
+ vertex table "Fun_Games_With_Tomer.TEST1::Tables.Airports"
   key column "airportCode"
  ;
