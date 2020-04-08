@@ -1,0 +1,19 @@
+ID: Fun_Games_With_Tomer
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: TEST1
+   type: hdb
+   path: TEST1
+   requires:
+    - name: hdi_TEST1
+
+resources:
+ - name: hdi_TEST1
+   parameters:
+      config:
+         schema: GAMES
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
